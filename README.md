@@ -5,7 +5,7 @@ Ini adalah project mini web "To-Do List" yang dibuat untuk tugas Coding Camp dar
  - Tambah tugas dan tanggal
  - Filter tugas berdasarkan tanggal
  - Hapus tugas
- - Responsive & ringan
+ - Responsive dan ringan
 
 # Teknologi yang Digunakan
  - HTML5
