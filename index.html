@@ -11,19 +11,32 @@
   <div class="container">
     <h1>To-Do List</h1>
     <form id="todo-form">
-      <input type="text" id="todo-input" placeholder="Masukkan tugas..." required>
+      <input type="text" id="todo-input" placeholder="Enter Task Here" required>
       <input type="date" id="todo-date" required>
-      <button type="submit">Tambah</button>
+      <button type="submit">Add Task</button>
     </form>
 
     <div class="filter">
-      <label for="filter-date">Filter berdasarkan tanggal:</label>
+      <label for="filter-date">Filter by Date:</label>
       <input type="date" id="filter-date">
     </div>
 
     <ul id="todo-list"></ul>
   </div>
 
+<button id="links-button" title="Lihat Tautan">
+  🔗 Links
+</button>
+
+<div id="links-modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <p>Feedback : <a href="mailto:xyzdaffaa03@gmail.com">Email</a></p>
+    <p>GitHub Repository : <a href="https://github.com/Revou-Coding-Camp/codingcamp-21-jul-25-Dff09" target="_blank">Click Here</a></p>
+  </div>
+</div>
+
   <script src="js/script.js"></script>
+
 </body>
 </html>

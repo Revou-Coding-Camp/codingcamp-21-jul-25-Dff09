@@ -144,7 +144,7 @@ li {
 }
 
 .delete-btn:hover {
-  transform: scale(1.05s);
+  transform: scale(1.05);
   background: #ff0000d3;
 }
 
@@ -160,4 +160,74 @@ li {
   opacity: 0;
   transform: translateX(20px);
   transition: all 0.5s ease;
+}
+
+#links-button {
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  padding: 10px 14px;
+  background-color: #ffffffb7;
+  color: #000;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+#links-button:hover {
+  background-color: #cdbaf5;
+}
+
+#links-modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: var(--input);
+  margin: 15% auto;
+  padding: 24px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  animation: fadeInUp 0.3s ease forwards;
+  color: #000;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content a {
+  color: #5e17eb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.modal-content a:hover {
+  text-decoration: underline;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #000;
 }
