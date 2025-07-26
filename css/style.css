@@ -2,10 +2,11 @@
   --primary: #ffffff;
   --primary-dark: #ffffff;
   --bg: #a166ee;
-  --card: hsla(270, 39%, 37%, 0.555);
+  --card: rgba(93, 69, 120, 0.555);
   --text: #000000;
   --gray: #f5f3f3;
   --danger: #c41616;
+  --input: #e7dbfa;
 }
 
 body {
@@ -46,11 +47,14 @@ form {
 input[type="text"],
 input[type="date"] {
   padding: 12px;
-  font-size: 15px;
+  font-size: 17px;
   border: 1px solid var(--gray);
   border-radius: 8px;
   outline: none;
-}
+
+  background-color: var(--input);
+  color: var(--text);
+} 
 
 input[type="text"]:focus,
 input[type="date"]:focus {
@@ -70,7 +74,7 @@ button {
 }
 
 button:hover {
-  background-color: var(--text);
+  background-color: #0000008e;
 }
 
 .filter {
@@ -122,4 +126,38 @@ li span {
 
 .delete-btn:hover {
   background: #fd0000;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+li {
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+.delete-btn:hover {
+  transform: scale(1.05s);
+  background: #ff0000d3;
+}
+
+li {
+  transition: all 0.3s ease;
+}
+
+.new-item {
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all 0.5s ease;
 }

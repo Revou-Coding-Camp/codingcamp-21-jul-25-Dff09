@@ -8,7 +8,7 @@ const task = input.value.trim();
 const date = dateInput.value;
 
 if (!task || !date) {
-  alert("Isi semua form dengan bener, bro!");
+  alert("Isi semua form dengan benar!");
   return;
 }
 
@@ -19,17 +19,26 @@ span.innerHTML = `<strong>${task}</strong><small>${date}</small>`;
 const delBtn = document.createElement("button");
 delBtn.textContent = "Hapus";
 delBtn.classList.add("delete-btn");
+
 delBtn.addEventListener("click", function () {
-  li.remove();
+  li.classList.add("fade-out");
+  setTimeout(() => {
+    li.remove();
+  }, 500);
 });
 
 li.setAttribute("data-date", date);
 li.appendChild(span);
 li.appendChild(delBtn);
+
+li.classList.add("new-item");
+setTimeout(() => {
+  li.classList.remove("new-item");
+}, 500);
+
 todoList.appendChild(li);
 
 form.reset();
-
 });
 
 filterDate.addEventListener("input", function () { const selectedDate = filterDate.value; const todos = document.querySelectorAll("#todo-list li");
