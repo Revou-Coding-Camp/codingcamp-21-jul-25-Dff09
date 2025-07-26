@@ -1,18 +1,18 @@
-# Deskripsi singkat
-Ini adalah project mini web "To-Do List" yang dibuat untuk tugas Coding Camp dari RevoU. Web ini memungkinkan pengguna untuk menambahkan tugas, memilih tanggal deadline, memfilter tugas berdasarkan tanggal, dan menghapus tugas yang sudah tidak diperlukan.
+# Description
+This is a mini "To-Do List" web project created for RevoU's Coding Camp assignment. This website allows users to add tasks, select due dates, filter tasks by date, and delete unnecessary tasks.
 
-# Fitur Utama
- - Tambah tugas dan tanggal
- - Filter tugas berdasarkan tanggal
- - Hapus tugas
- - Responsive dan ringan
+# Features
+- Add tasks and dates
+- Filter tasks by date
+- Delete tasks
+- Responsive and lightweight
 
-# Teknologi yang Digunakan
- - HTML5
- - CSS3 (custom properties, flexbox, gradient)
- - JavaScript
+# Technologies Used
+- HTML5
+- CSS3
+- JavaScript
 
-# Struktur Folder
- - 📁 css/ └── style.css
- - 📁 js/ └── script.js
- - 📄 index.html
+# Folder Structure
+- 📁 css/ └── style.css
+- 📁 js/ └── script.js
+- 📄 index.html
